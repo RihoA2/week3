@@ -5,6 +5,44 @@
     padding: 1rem;
     box-sizing: border-box;
 }
+.modal{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #36373b85;
+    text-align: center;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    
+
+}
+.modal-content{
+    background-color: rgba(127, 255, 212, 0.952);
+    margin:5% auto;
+    padding: 5rem;
+    width: 1500px;
+    height: 900px;
+    animation: zoom-in 1s;
+
+}
+@Keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+.closeBtn{
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.movie-poster-modal{
+    width: 9000px;
+    height: 600px;
+
+    
+}
+
 
 html {
     color: #151515;
@@ -12,8 +50,6 @@ html {
     font-weight: 400;
     font-style: normal;
 }
-
-
 .movie-card {
     margin-top: 5rem;
     height: 800px;
@@ -40,14 +76,9 @@ html {
     text-align: center;
     /*animation*/
     position: relative;
-    left: -50rem;
-    animation: slide-from-left 1.5s ease-in-out forwards;
+    
     transition: all 1s;
     cursor: pointer;    
-}
-@keyframes slide-from-left{
-    80%{left: 1.5rem;}
-    100% {left: 0;}
 }
 /*hover effect*/
 .movie-poster-container img:hover{
