@@ -51,7 +51,7 @@ html {
     font-style: normal;
 }
 .movie-card {
-    margin-top: 5rem;
+    margin-top: 1rem;
     height: 800px;
     text-align: center;
     /*fade in for full card*/
@@ -68,10 +68,9 @@ html {
 }
 
 .movie-poster-container img {
-    margin-top: 2rem;
-    height: 100%;
+    margin-top: 1rem;
+    height: 80%;
     border-radius: 25px;
-    height: 85%;
     width:30%;
     text-align: center;
     /*animation*/
@@ -138,12 +137,60 @@ html {
     justify-content:  right;
     margin-left: 1.1rem;
     margin-block: -2rem;
+}
+.carousel {
+    width: 85%;
+    text-align: center;
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 35rem;
+  
 
+
+}   
+.carousel img {
+    width: 100%;
+
+} 
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+    display: none;
+}    
+.carousel .carousel__item--visible {
+    display: block; 
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1}
+
+}
+.carousel .carousel__actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 35rem;
+
+}
+.carousel .carousel__actions button{
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    background-color: rgba(54, 53, 51, 0.507);
     
-    
+    color: white;
+    margin: 0.5rem;
 }
 footer{
-    margin-top: 35rem;
+    margin-top: 10rem;
     text-align: center;
     color:  #777;
 
